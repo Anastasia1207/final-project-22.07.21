@@ -1,12 +1,14 @@
-
+import errorImg from '../Assets/Images/404.jpg';
 
 
 function Page404() {
     return (
         <div className="container">
             <div className="row">
-            <div className="col-6 offset-3 text-center">
-                <h1>Something went wrong...</h1>
+            <div className="col-6 mt-5 pb-5 pt-5 offset-3  ">
+                
+            <img src={errorImg} alt="Error" />
+       
             </div>
             </div>
 

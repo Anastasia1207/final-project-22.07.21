@@ -22,7 +22,7 @@ function App() {
         </Route>
         <Route exact path="/articles"><Articles />
         </Route>
-        <Route path="/articles/article"><Article />
+        <Route path="/articles/:articleId"><Article />
         </Route>
         <Route path="/chat"><Chat/>
         </Route>
