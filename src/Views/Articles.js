@@ -1,33 +1,34 @@
 import Breadcrumbs from "../Components/Breadcrumbs";
 import { NavLink } from "react-router-dom";
-
+import articles from '../Data/Articles';
 
 
 function Articles() {
+   
     const breadcrumbPaths = [
         {link: '/', title: 'Home'},
         {title: 'Articles'},
     ]
-    const articles = [
-        {
-            title: 'Articles 1',
-            image:'https://picsum.photos/150/150',
-            text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
-            slug: 'first-article',
-        },
-        {
-            title: 'Articles 2',
-            image:'https://picsum.photos/150/150',
-            text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
-            slug: 'second-article',
-        },
-        {
-            title: 'Articles 3',
-            image:'https://picsum.photos/150/150',
-            text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
-            slug: 'third-article',
-        },
-    ];
+    // const articles = [
+    //     {
+    //         title: 'Article 1',
+    //         image:'https://picsum.photos/150/150',
+    //         text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
+    //         slug: 'first-article',
+    //     },
+    //     {
+    //         title: 'Article 2',
+    //         image:'https://picsum.photos/150/150',
+    //         text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
+    //         slug: 'second-article',
+    //     },
+    //     {
+    //         title: 'Article 3',
+    //         image:'https://picsum.photos/150/150',
+    //         text: 'Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again. Some info about the article and Some info about the article again & Some info about the article and Some info about the article again',
+    //         slug: 'third-article',
+    //     },
+    // ];
 
     const articleElements = articles.map((article, index) => {
         return (
