@@ -6,6 +6,7 @@ import InformationTab3 from '../Components/AboutUs.js/InformationTab3';
 import InformationTab4 from '../Components/AboutUs.js/InformationTab4';
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -19,7 +20,7 @@ function AboutUs() {
  
     const breadcrumbPaths = [
         { link: '/', title: 'Home' },
-        { link: '/aboutus', title: 'About Us' },
+        { title: 'About Us' },
     ];
     
 
@@ -46,7 +47,7 @@ if (activeTab == 'informationTab1') {
 
             <div className="row">
                 <div className="col">
-                    <h3>About us</h3>
+                <marquee>  <h3>About us</h3>   </marquee>
                 </div>
             </div>
 
@@ -69,9 +70,31 @@ if (activeTab == 'informationTab1') {
 {tabContent}
 </div>
             </div>
-            <div className="row">
-            <div className="col"> </div>
-            <div className="col">
+            <div className="row" style={{paddingBottom: '30px'}}>
+            <div className="col ">  
+            <h5>Contacts</h5>
+             <iframe
+                  className="map-sizer"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2173.3027860029356!2d24.1220783!3d56.9950002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf737c5e6a71%3A0xb0f07427a9e96bfd!2z0KDQuNC20YHQutC40Lkg0L_RgdC40YXQuNCw0YLRgNC40YfQtdGB0LrQuNC5INC4INC90LDRgNC60L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDRhtC10L3RgtGA!5e0!3m2!1sru!2slv!4v1618478757010!5m2!1sru!2slv"
+                  width="600"
+                  height="300"
+                  style={{border: 0}}
+                  loading="lazy"
+                ></iframe></div>
+            <div className="col " style={{paddingTop: '30px'}}>
+              
+           <h5>Address:</h5>
+    
+                <NavLink to="/map" style={{textDecoration: 'none'}}>Tvaika iela 2, Ziemeļu rajons, Rīga, LV-1005</NavLink>
+        <pre></pre>
+                <h5>Email:</h5>
+        
+                <NavLink to="/mail" style={{textDecoration: 'none'}}>nfo@tvaiku.lv</NavLink>
+                <pre></pre>
+                <h5>Phone:</h5>
+             
+                <p>+371 666 666</p>
+
                  </div>
 
             </div>

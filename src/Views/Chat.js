@@ -3,7 +3,7 @@ import Breadcrumbs from '../Components/Breadcrumbs';
 
 const breadcrumbPaths = [
     { link: '/', title: 'Home' },
-    { link: '/chat', title: 'Chat' },
+    { title: 'Chat' },
  
 
 ];
