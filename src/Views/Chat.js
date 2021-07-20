@@ -22,10 +22,10 @@ function Chat() {
 
         <div className="row">
             <div className="col">
-                <h3>Chat</h3>
+                <h3>Chat</h3> 
 
 
-            </div>
+      </div>
         </div>
 
         </div>
