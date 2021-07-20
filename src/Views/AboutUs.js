@@ -47,7 +47,7 @@ if (activeTab == 'informationTab1') {
 
             <div className="row">
                 <div className="col">
-                <marquee>  <h3>About us</h3>   </marquee>
+             <h3>About us</h3>
                 </div>
             </div>
 

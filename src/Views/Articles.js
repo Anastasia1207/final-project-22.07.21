@@ -39,7 +39,7 @@ function Articles() {
                </NavLink>
                 </div>
                 <div className="col-12 col-md-9">
-                    <h4><NavLink  style={{textDecoration: 'none'}}to={'/articles/' + article.slug}>{article.title}</NavLink></h4>
+                    <h4><NavLink  style={{textDecoration: 'none', color: '#1EA348'}}to={'/articles/' + article.slug}>{article.title}</NavLink></h4>
                 <p className="text-muted">{article.text}</p>
   
                 </div>
@@ -54,6 +54,25 @@ function Articles() {
                 </div>
             </div>
         {articleElements}
+        <nav aria-label="Page navigation example">
+  <ul className="pagination justify-content-end" >
+  <li className="page-item">
+      <NavLink className="page-link" to="/" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </NavLink>
+    </li>
+    <li className="page-item"><NavLink style={{color: '#3498DB' }} className="page-link" to="/">1</NavLink></li>
+    <li className="page-item"><NavLink style={{color: '#3498DB' }} className="page-link" to="/">2</NavLink></li>
+    <li className="page-item"><NavLink style={{color: '#3498DB' }} className="page-link" to="/">3</NavLink></li>
+    <li className="page-item"><NavLink style={{color: '#3498DB' }} className="page-link" to="/">4</NavLink></li>
+    <li className="page-item"><NavLink style={{color: '#3498DB' }} className="page-link" to="/">5</NavLink></li>
+    <li className="page-item">
+      <NavLink className="page-link" to="/" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </NavLink>
+    </li>
+  </ul>
+</nav>
         </div>
     )
 }

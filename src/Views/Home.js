@@ -34,7 +34,7 @@ function Home() {
     <div className="col-md-8">
       <div className="card-body">
         <h5 className="card-title">
-            <NavLink  style={{textDecoration: 'none'}} to={'/articles/' + article.id}>{article.title}</NavLink></h5>
+            <NavLink  style={{textDecoration: 'none', color: '#1EA348'}} to={'/articles/' + article.id}>{article.title}</NavLink></h5>
         <p className="card-text">{article.text}</p>
       </div>
     </div>
@@ -80,7 +80,7 @@ function Home() {
             </div>
 <div className="row">
 <div className="col mt-3">
-    <h4>Most recent articles</h4>
+<marquee><h4>Most recent articles</h4></marquee>
     </div>
 </div>
 <div className="row">

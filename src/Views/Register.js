@@ -128,7 +128,7 @@ function Register() {
 
             <div className="row">
                 <div className="col" style={{marginBottom: '310px'}}>
-                <button type="button" className="btn btn-primary">Register</button>
+                <button type="button" style={{backgroundColor: '#16A085'}} className="btn btn">Register</button>
 
 
                 </div>
