@@ -62,7 +62,7 @@ function Register() {
 
             <div className="row">
                 <div className="col-md-2 form-group" style={{marginBottom: '10px'}}>
-                    <input className="form-control form-control-sm" placeholder="Username&#42;"/>
+                    <input className="form-control form-control-sm" placeholder="Username&#42;"  required/>
 
 
                 </div>
@@ -116,7 +116,7 @@ function Register() {
             <div className="row">
                 <div className="col">
                   
-                    <div className="form-check" style={{marginBottom: '10px'}}>
+                    <div className="form-check"  required style={{marginBottom: '10px'}}>
   <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
   <label className="form-check-label" for="flexCheckDefault">
   <p>Agree with <NavLink to="/404">Terms &amp; Privacy</NavLink>.</p>
