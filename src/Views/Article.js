@@ -50,7 +50,7 @@ function Article() {
 
         <div className="row">
         <div className="col">
-             <h1>{article.title}</h1>
+             <h3>{article.title}</h3>
              </div>
             </div>
 

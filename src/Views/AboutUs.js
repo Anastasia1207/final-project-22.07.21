@@ -85,11 +85,11 @@ if (activeTab == 'informationTab1') {
               
            <h5>Address:</h5>
     
-                <NavLink to="/map" style={{textDecoration: 'none'}}>Tvaika iela 2, Ziemeļu rajons, Rīga, LV-1005</NavLink>
+                <p>Tvaika iela 2, Ziemeļu rajons, Rīga, LV-1005</p>
         <pre></pre>
                 <h5>Email:</h5>
         
-                <NavLink to="/mail" style={{textDecoration: 'none'}}>nfo@tvaiku.lv</NavLink>
+                <NavLink to="/mail" style={{textDecoration: 'none'}}>info@tvaiku.lv</NavLink>
                 <pre></pre>
                 <h5>Phone:</h5>
              

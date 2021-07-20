@@ -34,7 +34,7 @@ function Home() {
     <div className="col-md-8">
       <div className="card-body">
         <h5 className="card-title">
-            <NavLink to={'/articles/' + article.id}>{article.title}</NavLink></h5>
+            <NavLink  style={{textDecoration: 'none'}} to={'/articles/' + article.id}>{article.title}</NavLink></h5>
         <p className="card-text">{article.text}</p>
       </div>
     </div>

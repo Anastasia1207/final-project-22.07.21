@@ -39,7 +39,7 @@ function Articles() {
                </NavLink>
                 </div>
                 <div className="col-12 col-md-9">
-                    <h4><NavLink to={'/articles/' + article.slug}>{article.title}</NavLink></h4>
+                    <h4><NavLink  style={{textDecoration: 'none'}}to={'/articles/' + article.slug}>{article.title}</NavLink></h4>
                 <p className="text-muted">{article.text}</p>
   
                 </div>
