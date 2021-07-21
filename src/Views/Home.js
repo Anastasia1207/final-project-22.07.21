@@ -11,13 +11,13 @@ function Home() {
         },
         {
             title: 'Articles 2',
-            image:'https://picsum.photos/200/200',
+            image:'https://placebear.com/200/200',
             text: 'Some info about the article',
             id: 'second-article',
         },
         {
             title: 'Articles 3',
-            image:'https://picsum.photos/200/200',
+            image:'https://placekitten.com/200/200',
             text: 'Some info about the article',
             id: 'third-article',
         },
@@ -59,10 +59,10 @@ function Home() {
       <img src="https://picsum.photos/800/300" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="https://picsum.photos/800/300" className="d-block w-100" alt="..." />
+      <img src="http://lorempixel.com/800/300" className="d-block w-100" alt="..." />
     </div>
     <div className="carousel-item">
-      <img src="https://picsum.photos/800/300" className="d-block w-100" alt="..." />
+      <img src="https://placebear.com/800/300" className="d-block w-100" alt="..." />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
