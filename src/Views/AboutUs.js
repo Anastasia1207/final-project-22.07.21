@@ -5,7 +5,6 @@ import InformationTab2 from "../Components/AboutUs.js/InformationTab2";
 import InformationTab3 from "../Components/AboutUs.js/InformationTab3";
 import InformationTab4 from "../Components/AboutUs.js/InformationTab4";
 import React, { Component } from "react";
-import GoogleMapReact from "google-map-react";
 import { NavLink } from "react-router-dom";
 
 function AboutUs() {

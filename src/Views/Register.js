@@ -1,8 +1,5 @@
 import Breadcrumbs from "../Components/Breadcrumbs";
-import DataListInput from "react-datalist-input";
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import ReactHTMLDatalist from "react-html-datalist";
 import { NavLink } from "react-router-dom";
 
 const breadcrumbPaths = [{ link: "/", title: "Home" }, { title: "Login" }];
@@ -214,6 +211,5 @@ function Register() {
     </div>
   );
 }
-// }
 
 export default Register;

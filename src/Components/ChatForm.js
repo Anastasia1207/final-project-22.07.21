@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Message from "../Components/Message";
 
 function ChatForm({ onSubmit }) {
   const [isLoading, setLoading] = useState(false);

@@ -1,23 +1,31 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 function Breadcrumbs({ paths }) {
-
-    const links = paths.map((path, index) => { 
-        if (path.link) {
-            return  <li className="breadcrumb-item "  key={index}><NavLink style={{color: '#3498DB', textDecoration: 'none' }} to={path.link}>{path.title}</NavLink></li>
-        }
-        return <li className="breadcrumb-item active" key={index}>{path.title}</li>
-   
-    });
-
+  const links = paths.map((path, index) => {
+    if (path.link) {
+      return (
+        <li className="breadcrumb-item " key={index}>
+          <NavLink
+            style={{ color: "#3498DB", textDecoration: "none" }}
+            to={path.link}
+          >
+            {path.title}
+          </NavLink>
+        </li>
+      );
+    }
     return (
-        <nav aria-label="breadcrumb" >
-        <ol className="breadcrumb mt-3" >
-       
-          {links}
-        </ol>
-      </nav>
-    )
+      <li className="breadcrumb-item active" key={index}>
+        {path.title}
+      </li>
+    );
+  });
+
+  return (
+    <nav aria-label="breadcrumb">
+      <ol className="breadcrumb mt-3">{links}</ol>
+    </nav>
+  );
 }
 
 export default Breadcrumbs;

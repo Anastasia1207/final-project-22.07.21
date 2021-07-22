@@ -4,8 +4,6 @@ import { useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { SRLWrapper } from "simple-react-lightbox";
 
-// import articles from '../Views/Articles';
-
 function Article() {
   const { articleId, productId, articlesId } = useParams();
   const filteredArticle = articles.filter((article) => {
@@ -17,26 +15,9 @@ function Article() {
   const breadcrumbPaths = [
     { link: "/", title: "Home" },
     { link: "/articles", title: "Articles" },
-    //   { link: `/articles/${article.slug}`, title: article.title },
+
     { title: article.title },
   ];
-
-  // const updateMainImage = (event) => {
-
-  // }
-
-  // const productsCards= product.map((product, index) => {
-  //     return ()
-  // })
-
-  // }
-  // const imageThumbnails = product.images.map((image, index) => {
-  //     return (
-  //         <div className="col-4 mt-3" key={index}>
-  //         <img className="img-fluid" src={image} />
-  //         </div>
-  //     )
-  // })
 
   return (
     <div className="container">
@@ -57,16 +38,12 @@ function Article() {
           <SRLWrapper>
             <div className="row">
               <div className="col ps-2">
-                {/* <img src={articles.image} className="img-fluid" /> */}
-                {/* src={mainImage}  */}
                 <a href="https://picsum.photos/500/500">
                   <img
                     className="img-fluid p-6"
                     src="https://picsum.photos/400/400"
                   />
                 </a>
-
-                {/* <img className="img-fluid p-6"  src="https://picsum.photos/400/400" /> */}
               </div>
             </div>
 
@@ -125,7 +102,6 @@ function Article() {
           </SRLWrapper>
         </div>
         <div className="col-12 col-md-8 ">
-          {/* <p>{articles.description}</p> */}
           <p>
             What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
             printing and typesetting industry. Lorem Ipsum has been the
