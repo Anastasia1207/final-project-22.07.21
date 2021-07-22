@@ -34,24 +34,39 @@ function ChatForm({ onSubmit }) {
   };
 
   const button = isLoading ? (
-    <button type="submit" className={`btn btn-primary loading`} disabled={true}>
+    <button
+      type="submit"
+      className="btn btn loading .offset-md-2"
+      style={{ color: "#16A085" }}
+      disabled={true}
+    >
       <span
-        class="spinner-border spinner-border-sm"
+        className="spinner-border spinner-border-sm"
         role="status"
         aria-hidden="true"
       />{" "}
       Sending...
     </button>
   ) : (
-    <button type="submit" className={`btn btn-primary`}>
+    <button
+      type="submit"
+      className="btn btn"
+      style={{
+        backgroundColor: "#16A085",
+        color: "white",
+        width: "120px",
+      }}
+    >
       Send
     </button>
   );
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <div className="form-group">
-        <label htmlFor="username">Username:</label>
+      <div className="form-group p-2">
+        <label style={{ paddingBottom: "10px" }} htmlFor="username">
+          Username:
+        </label>
         <input
           type="text"
           className="form-control"
@@ -64,8 +79,10 @@ function ChatForm({ onSubmit }) {
           onChange={handleInputChange}
         />
       </div>
-      <div class="form-group">
-        <label htmlFor="message">Message:</label>
+      <div className="col-md-12 form-group p-2  ">
+        <label style={{ paddingBottom: "10px" }} htmlFor="message">
+          Message:
+        </label>
         <textarea
           placeholder="Enter message"
           className="form-control"
@@ -78,7 +95,9 @@ function ChatForm({ onSubmit }) {
           onChange={handleInputChange}
         />
       </div>
-      {button}
+      <div className="row">
+        <div className="btn p-2 ">{button}</div>
+      </div>
     </form>
   );
 }

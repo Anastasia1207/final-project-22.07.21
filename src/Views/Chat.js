@@ -21,10 +21,13 @@ function Chat() {
         </div>
       </div>
       <div className="row">
-        <div className=".col-md-3 .offset-md-3" style={{ paddingLeft: "20px" }}>
+        <div
+          className=".col-md-3 .offset-md-3 "
+          style={{ paddingLeft: "20px" }}
+        >
           <div className="row">
             <div
-              class="border border-secondary rounded"
+              class="border border-secondary rounded "
               style={{
                 backgroundColor: "#E9F7EF",
                 height: 570,
@@ -32,9 +35,9 @@ function Chat() {
                 flexFlow: "column nowrap",
               }}
             >
-              <div className="messages-container">
+              <div className="messages-container " style={{ margin: "10px" }}>
                 {messages.map(({ message, username, timestamp }) => (
-                  <div className="message">
+                  <div className="message ">
                     <p>
                       {username}: {new Date(timestamp).toLocaleString()}
                     </p>

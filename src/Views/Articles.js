@@ -36,7 +36,10 @@ function Articles() {
       </div>
       {articleElements}
       <nav aria-label="Page navigation example">
-        <ul className="pagination justify-content-end">
+        <ul
+          className="pagination justify-content-end "
+          style={{ paddingLeft: "1310px" }}
+        >
           <li className="page-item">
             <NavLink className="page-link" to="/" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
@@ -48,7 +51,11 @@ function Articles() {
             </NavLink>
           </li>
           <li className="page-item">
-            <NavLink style={{ color: "#3498DB" }} className="page-link" to="/">
+            <NavLink
+              style={{ color: "#3498DB" }}
+              className="page-link"
+              to="/404"
+            >
               2
             </NavLink>
           </li>

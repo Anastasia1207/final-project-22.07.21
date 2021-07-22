@@ -34,7 +34,7 @@ function Register() {
     console.log(formValue);
 
     if (password !== confirmPassword) {
-      alert("Your passwrods do not match");
+      alert("Your passwords don't match");
       return;
     }
 
@@ -178,7 +178,7 @@ function Register() {
               style={{ marginBottom: "10px" }}
             >
               <input
-                className="form-check-input required"
+                className="form-check-input required  "
                 id="termsAndCondition"
                 name="termsAndCondition"
                 type="checkbox"
